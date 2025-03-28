@@ -24,8 +24,7 @@ def index():
 
 @app.route('/charadas', methods=['GET'])
 def charada():
-    charada = random.choice(charadas) 
-    return charada
+    return jsonify(random.choice(charadas))
 
 @app.route('/charadas/<campo>/<busca>', methods=['GET'])
 def busca(campo, busca):
