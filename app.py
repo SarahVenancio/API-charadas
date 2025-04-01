@@ -30,17 +30,20 @@ def charada():
 
 @app.route('/charadas/<campo>/<busca>', methods=['GET'])
 def busca(campo, busca):
-    if campo not in ['id','charada','resposta']:
-        return jsonify({'mensagem':'ERRO! Campo não encontrado.'}), 404
+    if campo not in ['id', 'charada', 'resposta']:
+        return jsonify({'mensagem': 'ERRO! Campo não encontrado.'}), 404
 
     if campo == 'id':
-        busca = int(busca)
+        try:
+            busca = int(busca)
+        except ValueError:
+            return jsonify({'mensagem': 'ERRO! O ID deve ser um número inteiro.'}), 400
 
     for charada in charadas:
         if charada[campo] == busca:
             return jsonify(charada), 200
-    else:
-        return jsonify({'mensagem':'ERRO! Usuário não encontrado.'}), 404
+
+    return jsonify({'mensagem': 'ERRO! Charada não encontrada.'}), 404
 
 
 if __name__ == '__main__':
