@@ -13,7 +13,7 @@ charadas = [
     {'id': 5, 'pergunta': 'Por que os bombeiros não gostam de andar?', 'resposta': 'Porque eles só-correm'},
     {'id': 6, 'pergunta': 'Sabe por que nunca se deve desistir dos sonhos?', 'resposta': 'Porque se não tiver na padaria mais próxima pode ser que tenha na outra'},
     {'id': 7, 'pergunta': 'Onde os minions moram?', 'resposta': 'Em condoMINIONS'},
-    {'id': 8, 'pergunta': 'Qual é o esporte favorito dos músicos?', 'resposta': 'Lançamento de disco.'},
+    {'id': 8, 'pergunta': 'Qual é o esporte favorito dos músicos?', 'resposta': 'Lançamento de disco'},
     {'id': 9, 'pergunta': 'Sabe qual é a melhor forma de machucar alguém com as palavras?', 'resposta': 'Batendo nela com um dicionário'},
     {'id': 10, 'pergunta': 'Como uma mulher consegue ficar 8 dias sem dormir?', 'resposta': 'Dormindo durante a noite'},
     {'id': 11, 'pergunta': 'Por que os ovos não contam piadas?', 'resposta': 'Para não rachar de rir'},
